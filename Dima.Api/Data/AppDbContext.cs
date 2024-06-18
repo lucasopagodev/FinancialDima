@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Dima.Api;
 
-public class AppDbContext : DbContext
+public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(options)
 {
     public DbSet<Category> Categories { get; set; } = null!;
     public DbSet<Transaction> Transactions { get; set; } = null!;
