@@ -10,6 +10,8 @@
 /Users/0037796/Documents/GitHub/Dima/Dima.Api/bin/Debug/net8.0/Swashbuckle.AspNetCore.Swagger.dll
 /Users/0037796/Documents/GitHub/Dima/Dima.Api/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll
 /Users/0037796/Documents/GitHub/Dima/Dima.Api/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/0037796/Documents/GitHub/Dima/Dima.Api/bin/Debug/net8.0/Dima.Core.dll
+/Users/0037796/Documents/GitHub/Dima/Dima.Api/bin/Debug/net8.0/Dima.Core.pdb
 /Users/0037796/Documents/GitHub/Dima/Dima.Api/obj/Debug/net8.0/Dima.Api.csproj.AssemblyReference.cache
 /Users/0037796/Documents/GitHub/Dima/Dima.Api/obj/Debug/net8.0/Dima.Api.GeneratedMSBuildEditorConfig.editorconfig
 /Users/0037796/Documents/GitHub/Dima/Dima.Api/obj/Debug/net8.0/Dima.Api.AssemblyInfoInputs.cache
@@ -17,6 +19,7 @@
 /Users/0037796/Documents/GitHub/Dima/Dima.Api/obj/Debug/net8.0/Dima.Api.csproj.CoreCompileInputs.cache
 /Users/0037796/Documents/GitHub/Dima/Dima.Api/obj/Debug/net8.0/Dima.Api.MvcApplicationPartsAssemblyInfo.cs
 /Users/0037796/Documents/GitHub/Dima/Dima.Api/obj/Debug/net8.0/Dima.Api.MvcApplicationPartsAssemblyInfo.cache
+/Users/0037796/Documents/GitHub/Dima/Dima.Api/obj/Debug/net8.0/Dima.Api.sourcelink.json
 /Users/0037796/Documents/GitHub/Dima/Dima.Api/obj/Debug/net8.0/staticwebassets.build.json
 /Users/0037796/Documents/GitHub/Dima/Dima.Api/obj/Debug/net8.0/staticwebassets.development.json
 /Users/0037796/Documents/GitHub/Dima/Dima.Api/obj/Debug/net8.0/staticwebassets/msbuild.Dima.Api.Microsoft.AspNetCore.StaticWebAssets.props
