@@ -1,8 +1,8 @@
 ﻿using System.Reflection;
-using Dima.Core;
+using Dima.Core.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace Dima.Api;
+namespace Dima.Api.Data;
 
 public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(options)
 {

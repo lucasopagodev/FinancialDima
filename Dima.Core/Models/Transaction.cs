@@ -1,4 +1,6 @@
-﻿namespace Dima.Core;
+﻿using Dima.Core.Enums;
+
+namespace Dima.Core.Models;
 
 public class Transaction
 {

@@ -1,4 +1,4 @@
-﻿namespace Dima.Core;
+﻿namespace Dima.Core.Enums;
 
 public enum ETransactionType
 {

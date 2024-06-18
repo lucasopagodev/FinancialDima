@@ -1,4 +1,4 @@
-﻿namespace Dima.Core;
+﻿namespace Dima.Core.Models;
 
 public class Category
 {

@@ -1,6 +1,4 @@
-﻿using System.Runtime.CompilerServices;
-
-namespace Dima.Core;
+﻿namespace Dima.Core.Requests;
 
 public abstract class Request
 {
