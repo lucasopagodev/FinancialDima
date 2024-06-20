@@ -1,10 +1,11 @@
 ﻿using System.Net.Http.Json;
 using System.Text;
 using Dima.Core;
+using Dima.Core.Handlers;
 using Dima.Core.Requests.Account;
 using Dima.Core.Responses;
 
-namespace Dima.Web.Handler;
+namespace Dima.Web.Handlers;
 
 public class AccountHandler(IHttpClientFactory httpClientFactory) : IAccountHandler
 {

@@ -1,7 +1,7 @@
 ﻿using Dima.Core.Requests.Account;
 using Dima.Core.Responses;
 
-namespace Dima.Core;
+namespace Dima.Core.Handlers;
 
 public interface IAccountHandler
 {
