@@ -22,10 +22,10 @@ public class GetTransactionsByPeriodEndpoint : IEndpoint
   private static async Task<IResult> HandleAsync(
       ClaimsPrincipal user,
       ITransactionHandler handler,
-      DateTime? startDate = null,
-      DateTime? endDate = null,
-      int pageNumber = Configuration.DefaultPageNumber,
-      int pageSize = Configuration.DefaultPageSize)
+      [FromQuery] DateTime? startDate = null,
+      [FromQuery] DateTime? endDate = null,
+      [FromQuery] int pageNumber = Configuration.DefaultPageNumber,
+      [FromQuery] int pageSize = Configuration.DefaultPageSize)
   {
     var request = new GetTransactionsByPeriodRequest
     {

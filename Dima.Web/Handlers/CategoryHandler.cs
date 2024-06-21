@@ -1,5 +1,4 @@
-﻿using System.Dynamic;
-using System.Net.Http.Json;
+﻿using System.Net.Http.Json;
 using Dima.Core.Handlers;
 using Dima.Core.Models;
 using Dima.Core.Requests.Categories;
