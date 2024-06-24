@@ -7,7 +7,7 @@ namespace Dima.Web.Pages.Categories
 {
     public partial class CreateCategoryPage : ComponentBase
     {
-        #region Properties
+    #region Properties
 
     public bool IsBusy { get; set; } = false;
     public CreateCategoryRequest InputModel { get; set; } = new();
@@ -52,5 +52,6 @@ namespace Dima.Web.Pages.Categories
     }
 
     #endregion
+    
     }
 }

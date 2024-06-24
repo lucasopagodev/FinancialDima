@@ -11,6 +11,11 @@
                 <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="ToggleDrawer" />
                 Dima
                 <MudSpacer />
+                <MudButton Href="/lancamentos/novo" 
+                           Variant="Variant.Text" StartIcon="@Icons.TwoTone.Add" Color="Color.Inherit" IconColor="Color.Inherit">
+                    NOVO LANÇAMENTO
+                </MudButton>
+                <MudSpacer />
                 <MudText Typo="Typo.caption">@context.User.Identity?.Name</MudText>
                 <MudToggleIconButton T="bool" Color="Color.Inherit" @bind-Toggled="@_isDarkMode" Class="ma-4" Icon="@Icons.TwoTone.LightMode" ToggledIcon="@Icons.Material.Filled.DarkMode" ToggledColor="@Color.Inherit" />
             </MudAppBar>
