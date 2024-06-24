@@ -20,21 +20,21 @@ public class GetAllCategoriesEndpoint : IEndpoint
           .Produces<PagedResponse<List<Category>?>>();
 
   private static async Task<IResult> HandleAsync(
-      ClaimsPrincipal user,    
+      ClaimsPrincipal user,
       ICategoryHandler handler,
-      int pageNumber = Configuration.DefaultPageNumber,
-      int pageSize = Configuration.DefaultPageSize)
+      [FromQuery] int pageNumber = Configuration.DefaultPageNumber,
+      [FromQuery] int pageSize = Configuration.DefaultPageSize)
   {
-    var request = new GetAllCategoriesRequest
-    {
-      UserId = user.Identity?.Name ?? string.Empty,
-      PageNumber = pageNumber,
-      PageSize = pageSize,
-    };
+      var request = new GetAllCategoriesRequest
+      {
+          UserId = user.Identity?.Name ?? string.Empty,
+          PageNumber = pageNumber,
+          PageSize = pageSize,
+      };
 
-    var result = await handler.GetAllAsync(request);
-    return result.IsSuccess
-        ? TypedResults.Ok(result)
-        : TypedResults.BadRequest(result);
+      var result = await handler.GetAllAsync(request);
+      return result.IsSuccess
+          ? TypedResults.Ok(result)
+          : TypedResults.BadRequest(result);
   }
 }
