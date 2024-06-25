@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/lucasrodrigues/dev/Swift/Docs/FinancialDima/Dima.Api/Dima.Api.csproj": {}
+    "/Users/lucasrodrigues/dev/Balta/FinancialDima/Dima.Api/Dima.Api.csproj": {}
   },
   "projects": {
-    "/Users/lucasrodrigues/dev/Swift/Docs/FinancialDima/Dima.Api/Dima.Api.csproj": {
+    "/Users/lucasrodrigues/dev/Balta/FinancialDima/Dima.Api/Dima.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/lucasrodrigues/dev/Swift/Docs/FinancialDima/Dima.Api/Dima.Api.csproj",
+        "projectUniqueName": "/Users/lucasrodrigues/dev/Balta/FinancialDima/Dima.Api/Dima.Api.csproj",
         "projectName": "Dima.Api",
-        "projectPath": "/Users/lucasrodrigues/dev/Swift/Docs/FinancialDima/Dima.Api/Dima.Api.csproj",
+        "projectPath": "/Users/lucasrodrigues/dev/Balta/FinancialDima/Dima.Api/Dima.Api.csproj",
         "packagesPath": "/Users/lucasrodrigues/.nuget/packages/",
-        "outputPath": "/Users/lucasrodrigues/dev/Swift/Docs/FinancialDima/Dima.Api/obj/",
+        "outputPath": "/Users/lucasrodrigues/dev/Balta/FinancialDima/Dima.Api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/lucasrodrigues/.nuget/NuGet/NuGet.Config"
@@ -27,8 +27,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/lucasrodrigues/dev/Swift/Docs/FinancialDima/Dima.Core/Dima.Core.csproj": {
-                "projectPath": "/Users/lucasrodrigues/dev/Swift/Docs/FinancialDima/Dima.Core/Dima.Core.csproj"
+              "/Users/lucasrodrigues/dev/Balta/FinancialDima/Dima.Core/Dima.Core.csproj": {
+                "projectPath": "/Users/lucasrodrigues/dev/Balta/FinancialDima/Dima.Core/Dima.Core.csproj"
               }
             }
           }
@@ -61,6 +61,10 @@
               "target": "Package",
               "version": "[8.0.6, )"
             },
+            "Stripe.Net": {
+              "target": "Package",
+              "version": "[45.0.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.6.2, )"
@@ -89,14 +93,14 @@
         }
       }
     },
-    "/Users/lucasrodrigues/dev/Swift/Docs/FinancialDima/Dima.Core/Dima.Core.csproj": {
+    "/Users/lucasrodrigues/dev/Balta/FinancialDima/Dima.Core/Dima.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/lucasrodrigues/dev/Swift/Docs/FinancialDima/Dima.Core/Dima.Core.csproj",
+        "projectUniqueName": "/Users/lucasrodrigues/dev/Balta/FinancialDima/Dima.Core/Dima.Core.csproj",
         "projectName": "Dima.Core",
-        "projectPath": "/Users/lucasrodrigues/dev/Swift/Docs/FinancialDima/Dima.Core/Dima.Core.csproj",
+        "projectPath": "/Users/lucasrodrigues/dev/Balta/FinancialDima/Dima.Core/Dima.Core.csproj",
         "packagesPath": "/Users/lucasrodrigues/.nuget/packages/",
-        "outputPath": "/Users/lucasrodrigues/dev/Swift/Docs/FinancialDima/Dima.Core/obj/",
+        "outputPath": "/Users/lucasrodrigues/dev/Balta/FinancialDima/Dima.Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/lucasrodrigues/.nuget/NuGet/NuGet.Config"

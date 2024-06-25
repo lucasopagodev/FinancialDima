@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YCCzRxaeNj4EhnLIRR02wSE8OA0/kCFO4UhmzDV982D9DI1ZFRuzsHpdq9eCw9XGsQoPzLhn33e58xYpTdyMrQ==",
+  "dgSpecHash": "GZMYJwqEpY8tRS5WCB2FNRSPMrCoPsGBZcbfluKfnJDDLFKo6jhsi1Hkla/ygfFtEczbRa8sRmCZ1Hf9zUiD1Q==",
   "success": true,
-  "projectFilePath": "/Users/lucasrodrigues/dev/Swift/Docs/FinancialDima/Dima.Core/Dima.Core.csproj",
+  "projectFilePath": "/Users/lucasrodrigues/dev/Balta/FinancialDima/Dima.Core/Dima.Core.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
