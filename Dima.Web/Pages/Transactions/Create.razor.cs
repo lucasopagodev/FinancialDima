@@ -35,10 +35,10 @@ namespace Dima.Web.Pages.Transactions
             try
             {
                 IsBusy = true;
-    
+
                 var request = new GetAllCategoriesRequest();
                 var result = await CategoryHandler.GetAllAsync(request);
-    
+
                 if (result.IsSuccess)
                 {
                     Categories = result.Data ?? [];
@@ -69,7 +69,7 @@ namespace Dima.Web.Pages.Transactions
                 if (result.IsSuccess)
                 {
                     Snackbar.Add(result.Message, Severity.Success);
-                    NavigationManager.NavigateTo("/transactions");
+                    NavigationManager.NavigateTo("/lancamentos/historico");
                 }
                 else
                     Snackbar.Add(result.Message, Severity.Error);
