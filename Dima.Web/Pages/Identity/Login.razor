@@ -9,36 +9,27 @@
             <div class="d-flex justify-center px-8">
                 <img src="imgs/dima.png" alt="Dima - Controle Financeiro" width="150" />
             </div>
-            
+
             <EditForm Model="@InputModel" OnValidSubmit="OnValidSubmitAsync">
-                <DataAnnotationsValidator/>
+                <DataAnnotationsValidator />
 
-                <MudTextField
-                    T="string"
-                    Label="E-mail"
-                    HelperText="Campo obrigatório"
-                    InputType="InputType.Email"
-                    For="@(() => InputModel.Email)"
-                    @bind-Value="InputModel.Email"/>
+                <MudTextField T="string" Label="E-mail" HelperText="Campo obrigatório" InputType="InputType.Email"
+                    For="@(() => InputModel.Email)" @bind-Value="InputModel.Email" />
 
-                <MudTextField
-                    T="string"
-                    Label="Senha"
-                    HelperText="Campo obrigatório"
-                    InputType="InputType.Password"
-                    For="@(() => InputModel.Password)"
-                    @bind-Value="InputModel.Password"/>
+                <MudTextField T="string" Label="Senha" HelperText="Campo obrigatório" InputType="InputType.Password"
+                    For="@(() => InputModel.Password)" @bind-Value="InputModel.Password" />
 
                 <div class="d-flex mt-8">
                     @if (IsBusy)
                     {
-                        <MudProgressCircular Color="Color.Info" Indeterminate="true"/>
+                        <MudProgressCircular Color="Color.Info" Indeterminate="true" />
                     }
                     else
                     {
-                        <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Primary">ENTRAR</MudButton>
-                        <MudSpacer/>
-                        <MudButton Href="/comecar">QUERO ME CADASTRAR</MudButton>
+                        <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Primary">ENTRAR
+                        </MudButton>
+                        <MudSpacer />
+                        <MudButton Href="/register">QUERO ME CADASTRAR</MudButton>
                     }
                 </div>
 

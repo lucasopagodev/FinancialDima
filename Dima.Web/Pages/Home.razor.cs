@@ -39,7 +39,7 @@ namespace Dima.Web.Pages
 
         #region Methods
 
-        public void ToggleShowValues() 
+        public void ToggleShowValues()
             => ShowValues = !ShowValues;
 
         #endregion

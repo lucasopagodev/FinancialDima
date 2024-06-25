@@ -10,9 +10,8 @@
                     <MudText Typo="Typo.h6">Resumo Financeiro</MudText>
                 </CardHeaderContent>
                 <CardHeaderActions>
-                    <MudIconButton
-                        Icon="@(ShowValues ? Icons.TwoTone.VisibilityOff : Icons.TwoTone.Visibility)"
-                        OnClick="ToggleShowValues"/>
+                    <MudIconButton Icon="@(ShowValues ? Icons.TwoTone.VisibilityOff : Icons.TwoTone.Visibility)"
+                        OnClick="ToggleShowValues" />
                 </CardHeaderActions>
             </MudCardHeader>
             <MudCardContent>
@@ -22,7 +21,7 @@
                 @if (Summary is null)
                 {
                     <div class="d-flex justify-center align-center" style="height: 350px">
-                        <MudProgressCircular Indeterminate="true" Color="Color.Primary"/>
+                        <MudProgressCircular Indeterminate="true" Color="Color.Primary" />
                     </div>
                 }
                 else
@@ -40,7 +39,7 @@
                         </MudText>
                     }
 
-                    <br/>
+                    <br />
                     <p>
                         <strong>Entradas</strong>
                     </p>
@@ -48,7 +47,7 @@
                         @(ShowValues ? Summary.Incomes.ToString("C") : "R$ ********")
                     </MudText>
 
-                    <br/>
+                    <br />
                     <p>
                         <strong>Saídas</strong>
                     </p>
@@ -65,7 +64,7 @@
                 <MudText Typo="Typo.h6">Receitas e Despesas</MudText>
             </MudCardHeader>
             <MudCardContent>
-                <IncomesAndExpensesChart/>
+                <IncomesAndExpensesChart />
             </MudCardContent>
         </MudCard>
     </MudItem>
@@ -75,7 +74,7 @@
                 <MudText Typo="Typo.h6">Entradas por Categoria</MudText>
             </MudCardHeader>
             <MudCardContent>
-                <IncomesByCategoryChart/>
+                <IncomesByCategoryChart />
             </MudCardContent>
         </MudCard>
     </MudItem>
@@ -85,9 +84,8 @@
                 <MudText Typo="Typo.h6">Despesas por Categoria</MudText>
             </MudCardHeader>
             <MudCardContent>
-                <ExpensesByCategoryChart/>
+                <ExpensesByCategoryChart />
             </MudCardContent>
         </MudCard>
     </MudItem>
 </MudGrid>
-
