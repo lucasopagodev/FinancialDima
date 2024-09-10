@@ -41,7 +41,7 @@ public class CategoryHandler(AppDbContext context) : ICategoryHandler
                 return new Response<Category?>(null, 404, "Categoria não econtrada");
 
             category.Title = request.Title;
-            category.Description = request.Description;
+            category.Description = request.Description ?? string.Empty;
 
             context.Categories.Update(category);
             await context.SaveChangesAsync();
@@ -65,7 +65,7 @@ public class CategoryHandler(AppDbContext context) : ICategoryHandler
 
             context.Categories.Remove(category);
             await context.SaveChangesAsync();
-            
+
             return new Response<Category?>(category, message: "Categoria excluída com sucesso");
         }
         catch
@@ -82,7 +82,7 @@ public class CategoryHandler(AppDbContext context) : ICategoryHandler
                 .AsNoTracking()
                 .FirstOrDefaultAsync(x => x.Id == request.Id);
 
-            return category is null ? new Response<Category?>(null, 404, "Categoria não encontrada") : new Response<Category?>(category);            
+            return category is null ? new Response<Category?>(null, 404, "Categoria não encontrada") : new Response<Category?>(category);
         }
         catch
         {
@@ -98,7 +98,7 @@ public class CategoryHandler(AppDbContext context) : ICategoryHandler
                 .Categories
                 .AsNoTracking()
                 .Where(x => x.UserId == request.UserId)
-                .OrderBy(x => x.Title); 
+                .OrderBy(x => x.Title);
 
             var categories = await query
                 .Skip((request.PageNumber - 1) * request.PageSize)
