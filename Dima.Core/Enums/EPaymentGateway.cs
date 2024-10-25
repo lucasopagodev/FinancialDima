@@ -3,5 +3,6 @@
 public enum EPaymentGateway
 {
   Stripe = 1,
-  PayPal = 2
+  PayPal = 2,
+  Asaas = 3
 }
