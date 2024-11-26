@@ -4825,6 +4825,7 @@
       "packagesPath": "/Users/0037796/.nuget/packages/",
       "outputPath": "/Users/0037796/Documents/GitHub/FinancialDima/Dima.Api/obj/",
       "projectStyle": "PackageReference",
+      "UsingMicrosoftNETSdk": false,
       "configFilePaths": [
         "/Users/0037796/.nuget/NuGet/NuGet.Config"
       ],

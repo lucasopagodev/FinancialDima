@@ -39,7 +39,6 @@ public static class Endpoint
 
     endpoints.MapGroup("v1/products")
       .WithTags("Products")
-      .RequireAuthorization()
       .MapEndpoint<GetAllProductsEndpoint>()
       .MapEndpoint<GetProductBySlugEndpoint>();
 
