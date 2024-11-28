@@ -16,7 +16,24 @@
                         </div>
                     </MudListItem>
                     <MudDivider/>
-                    VOUCHER
+                    <MudListItem Icon="@(Voucher is null ? Icons.Material.Filled.Discount : Icons.Material.Filled.CheckCircle)">
+                        <MudTextField T="string" 
+                            Disabled="@(Voucher is not null)" 
+                            Placeholder="Cupom de desconto" 
+                            @bind-Value="@VoucherNumber"
+                            Mask="Mask" 
+                            Adornment="Adornment.End" 
+                            AdornmentIcon="@Icons.Material.Filled.FactCheck" 
+                            OnAdornmentClick="@(() => { })" />
+                    </MudListItem>
+                    <MudListItem Icon="@Icons.Material.Filled.MoneyOff">
+                        <div class="d-flex">
+                            <MudText>Desconto</MudText>
+                            <MudText Class="ml-auto">
+                                @(Voucher?.Amount.ToString("C"))
+                            </MudText>
+                        </div>
+                    </MudListItem>
                 </MudList>
                 <div class="mt-auto">
                     <MudDivider/>
@@ -31,6 +48,7 @@
                 </div>
             </MudPaper>
             <MudButton
+                @onclick="OnValidSubmitAsync"
                 Variant="Variant.Filled"
                 Color="Color.Primary"
                 Disabled="@(!IsValid)"
