@@ -4807,6 +4807,7 @@
       "Dima.Core >= 1.0.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 8.0.6",
       "Microsoft.AspNetCore.OpenApi >= 8.0.6",
+      "Microsoft.EntityFrameworkCore >= 8.0.6",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.6",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.6",
       "Stripe.Net >= 45.0.0",
@@ -4814,19 +4815,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/0037796/.nuget/packages/": {}
+    "/Users/lucasrodrigues/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/0037796/Documents/GitHub/FinancialDima/Dima.Api/Dima.Api.csproj",
+      "projectUniqueName": "/Users/lucasrodrigues/dev/Balta/FinancialDima/Dima.Api/Dima.Api.csproj",
       "projectName": "Dima.Api",
-      "projectPath": "/Users/0037796/Documents/GitHub/FinancialDima/Dima.Api/Dima.Api.csproj",
-      "packagesPath": "/Users/0037796/.nuget/packages/",
-      "outputPath": "/Users/0037796/Documents/GitHub/FinancialDima/Dima.Api/obj/",
+      "projectPath": "/Users/lucasrodrigues/dev/Balta/FinancialDima/Dima.Api/Dima.Api.csproj",
+      "packagesPath": "/Users/lucasrodrigues/.nuget/packages/",
+      "outputPath": "/Users/lucasrodrigues/dev/Balta/FinancialDima/Dima.Api/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/0037796/.nuget/NuGet/NuGet.Config"
+        "/Users/lucasrodrigues/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -4839,8 +4840,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/0037796/Documents/GitHub/FinancialDima/Dima.Core/Dima.Core.csproj": {
-              "projectPath": "/Users/0037796/Documents/GitHub/FinancialDima/Dima.Core/Dima.Core.csproj"
+            "/Users/lucasrodrigues/dev/Balta/FinancialDima/Dima.Core/Dima.Core.csproj": {
+              "projectPath": "/Users/lucasrodrigues/dev/Balta/FinancialDima/Dima.Core/Dima.Core.csproj"
             }
           }
         }
@@ -4849,6 +4850,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -4860,6 +4866,10 @@
             "version": "[8.0.6, )"
           },
           "Microsoft.AspNetCore.OpenApi": {
+            "target": "Package",
+            "version": "[8.0.6, )"
+          },
+          "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[8.0.6, )"
           },
@@ -4901,7 +4911,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.407/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
