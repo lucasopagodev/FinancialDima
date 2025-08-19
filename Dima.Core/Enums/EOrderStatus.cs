@@ -6,5 +6,6 @@ public enum EOrderStatus
   Paid = 2,
   Canceled = 3,
   Refunded = 4,
-  Expired = 5
+  Expired = 5,
+  Authentication = 6,
 }

@@ -2,6 +2,7 @@
 using Dima.Core.Handlers;
 using Dima.Core.Requests.Stripe;
 using Dima.Core.Responses;
+using Dima.Core.Responses.Stripe;
 using Stripe.Checkout;
 
 namespace Dima.Api.Handlers;
@@ -49,5 +50,10 @@ public class StripeHandler : IStripeHandler
     var session = await service.CreateAsync(options);
 
     return new Response<string?>(session.Id);
+  }
+
+  public Task<Response<List<StripeTransactionReponse>>> GetTransactionsByOrderNumberAsync(GetTransactionsByOrderNumberRequest request)
+  {
+      throw new NotImplementedException();
   }
 }
