@@ -1,8 +1,12 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "5kP4rJdN33E=",
+=======
+  "dgSpecHash": "pXxgtug9R1BY5EBtruAdNmOLoijdA9dud6LyFND9Ujp8450EQTHCV56pktEiCOBdN2MDLAwFsEkNreyGVAq3nw==",
+>>>>>>> main
   "success": true,
-  "projectFilePath": "/Users/lucasrodrigues/dev/Balta/FinancialDima/Dima.Core/Dima.Core.csproj",
+  "projectFilePath": "/Users/0037796/Documents/GitHub/FinancialDima/Dima.Core/Dima.Core.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
