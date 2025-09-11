@@ -483,3 +483,9 @@ $RECYCLE.BIN/
 
 # Vim temporary swap files
 *.swp
+/Dima.Api/obj
+/Dima.Api/obj
+/Dima.Api/obj/Debug
+/Dima.Api/obj/Debug
+/Dima.Core/obj
+/Dima.Core/obj
