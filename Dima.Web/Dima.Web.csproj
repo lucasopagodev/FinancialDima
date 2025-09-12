@@ -28,4 +28,20 @@
     <ProjectReference Include="..\Dima.Core\Dima.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove="Pages\Orders\Confirm\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="Pages\Orders\Confirm\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Pages\Orders\Confirm\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Pages\Orders\Confirm\**" />
+  </ItemGroup>
+
 </Project>

@@ -18,7 +18,11 @@ public class OrderHandler(AppDbContext context) : IOrderHandler
 
         try
         {
-            order = await context.Orders.Include(x => x.Product).Include(x => x.Voucher).FirstOrDefaultAsync(x => x.Id == request.Id && x.UserId == request.UserId);
+            order = await context
+                .Orders
+                .Include(x => x.Product)
+                .Include(x => x.Voucher)
+                .FirstOrDefaultAsync(x => x.Id == request.Id && x.UserId == request.UserId);
 
             if (order is null)
                 return new Response<Order?>(null, 404, "Pedido não encontrado.");
@@ -67,7 +71,10 @@ public class OrderHandler(AppDbContext context) : IOrderHandler
         Product? product;
         try
         {
-            product = await context.Products.AsNoTracking().FirstOrDefaultAsync(x => x.Id == request.ProductId && x.IsActive == true);
+            product = await context
+                .Products
+                .AsNoTracking()
+                .FirstOrDefaultAsync(x => x.Id == request.ProductId && x.IsActive == true);
 
             if (product is null)
                 return new Response<Order?>(null, 400, "Produto não encontrado.");
@@ -84,7 +91,10 @@ public class OrderHandler(AppDbContext context) : IOrderHandler
         {
             if (request.VoucherId is not null)
             {
-                voucher = await context.Vouchers.AsNoTracking().FirstOrDefaultAsync(x => x.Id == request.VoucherId && x.IsActive == true);
+                voucher = await context
+                    .Vouchers
+                    .AsNoTracking()
+                    .FirstOrDefaultAsync(x => x.Id == request.VoucherId && x.IsActive == true);
 
                 if (voucher is null)
                     return new Response<Order?>(null, 400, "Voucher inválido ou não encontrado.");
@@ -128,7 +138,11 @@ public class OrderHandler(AppDbContext context) : IOrderHandler
         Order? order;
         try
         {
-            order = await context.Orders.Include(x => x.Product).Include(x => x.Voucher).FirstOrDefaultAsync(x => x.Id == request.Id && x.UserId == request.UserId);
+            order = await context
+                .Orders
+                .Include(x => x.Product)
+                .Include(x => x.Voucher)
+                .FirstOrDefaultAsync(x => x.Id == request.Id && x.UserId == request.UserId);
 
             if (order is null)
                 return new Response<Order?>(null, 404, "Pedido não encontrado");
@@ -178,7 +192,11 @@ public class OrderHandler(AppDbContext context) : IOrderHandler
         Order? order;
         try
         {
-            order = await context.Orders.Include(x => x.Product).Include(x => x.Voucher).FirstOrDefaultAsync(x => x.Id == request.Id && x.UserId == request.UserId);
+            order = await context
+                .Orders
+                .Include(x => x.Product)
+                .Include(x => x.Voucher)
+                .FirstOrDefaultAsync(x => x.Id == request.Id && x.UserId == request.UserId);
 
             if (order is null)
                 return new Response<Order?>(null, 404, "Pedido não encontrado.");
